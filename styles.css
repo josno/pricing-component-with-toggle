@@ -1,0 +1,211 @@
+/* - Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light Grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+
+html,
+body {
+	height: auto;
+}
+
+body {
+	background-image: url("./images/bg-top.svg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-color: hsl(240, 78%, 98%);
+	background-size: 11rem;
+	background-position-x: 145%;
+	background-position-y: -5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 93.75%;
+	position: relative;
+}
+
+main,
+header,
+div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+	padding: 3rem 0px 6rem 0px;
+	color: hsl(233, 13%, 49%);
+}
+
+h1 {
+	margin-bottom: 2rem;
+}
+
+.toggle-container {
+	flex-direction: row;
+	height: fit-content;
+	width: 100%;
+	justify-content: center;
+}
+
+.toggle-wrapper {
+	position: relative;
+	margin: 0px 10px;
+	width: 4.5rem;
+	height: 2.5rem;
+	border-radius: 100px;
+	background-color: hsl(237, 63%, 64%);
+	background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.toggle {
+	content: "";
+	height: 2rem;
+	border-radius: 50%;
+	width: 2rem;
+	position: absolute;
+	/* border: 1px solid red; */
+	background-color: white;
+	left: 10px;
+	content: "";
+	height: 2rem;
+	border-radius: 50%;
+	width: 2rem;
+	position: absolute;
+	/* border: 1px solid red; */
+	background-color: white;
+	left: 5%;
+	bottom: 10%;
+	transition: all 0.2s ease-in-out;
+}
+
+.toggled-left {
+	transform: translateX(100%);
+}
+
+.toggled-right {
+	transform: translateX(0);
+}
+
+main {
+	width: 90%;
+	height: 100%;
+	padding-bottom: 5rem;
+}
+
+main div {
+	width: 100%;
+}
+
+main div div {
+	box-shadow: 3px 4px 12px rgb(0, 0, 0, 0.2);
+	margin: 20px;
+	height: fit-content;
+	border-radius: 0.75rem;
+	background-color: white;
+	color: hsl(233, 13%, 49%);
+	padding: 0px 1.875rem;
+}
+
+main div div p {
+	margin: 1.5rem 0px;
+	font-size: 1.25rem;
+}
+
+main div div ul li:nth-child(1) {
+	font-size: 4rem;
+	padding-top: 0px;
+	color: hsl(232, 13%, 33%);
+}
+
+main div div a {
+	padding: 1rem;
+	letter-spacing: 1px;
+	margin: 1.875rem 0px;
+	width: 100%;
+	border-radius: 0.5rem;
+	text-align: center;
+	background-color: hsl(237, 63%, 64%);
+	background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	color: white;
+	border: 3px solid white;
+}
+
+main div div a:hover {
+	cursor: pointer;
+	background: white;
+	color: hsl(237, 63%, 64%);
+	border: 3px solid hsl(237, 63%, 64%);
+}
+
+ul,
+li {
+	padding-left: 0px;
+	list-style: none;
+	text-align: center;
+}
+
+ul {
+	width: 100%;
+}
+
+li {
+	border-bottom: 1px solid hsl(234, 14%, 74%);
+	padding: 1.5rem 0px;
+}
+
+.highlight {
+	background-color: hsl(237, 63%, 64%);
+	background: linear-gradient(
+		to bottom,
+		hsl(236, 72%, 79%),
+		hsl(237, 63%, 64%)
+	);
+	color: white;
+}
+
+.highlight li:nth-child(1) {
+	color: white;
+}
+
+.highlight a {
+	background: white;
+	color: hsl(237, 63%, 64%);
+	border: 3px solid hsl(237, 63%, 64%);
+}
+
+.highlight a:hover {
+	cursor: pointer;
+	background-color: hsl(237, 63%, 64%);
+	color: white;
+	border: 3px solid white;
+}
+
+@media (min-width: 1200px) {
+	main div {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	main div div {
+		flex-direction: column;
+		margin: 0.33rem;
+		width: 25rem;
+		height: 35rem;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.highlight {
+		transform: scale(1.1);
+	}
+}

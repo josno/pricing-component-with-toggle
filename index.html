@@ -1,52 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: -1%;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Our Pricing
-  Annually
-  Monthly
+<body class="flex">
+  <header class="flex">
+    <h1>Our Pricing</h1>
+    <div class="toggle-container">
+      <p>Annually</p>
+      <div class="toggle-wrapper">
+        <div class="toggle toggled-right"></div>
+      </div>
+      <p> Monthly</p>
+    </div>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+  </header>
+  <main class="flex">
+    <div class="flex">
+      <div>
+        <p>Basic</p>
+        <ul>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+          <!-- <li>&dollar;19.99</li> -->
+          <li>&dollar; <span class="annual" id="basic">199.99</span></li>
+          <li>500 GB Storage</li>
+          <li>2 Users Allowed</li>
+          <li> Send up to 3 GB</li>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        </ul>
+        <a>LEARN MORE</a>
+      </div>
+      <div class="highlight">
+        <p> Professional</p>
+        <ul>
+
+          <!-- <li>&dollar;24.99</li> -->
+          <li>&dollar;<span class="annual" id="professional">249.99</span></li>
+          <li>1 TB Storage</li>
+          <li>5 Users Allowed</li>
+          <li>Send up to 10 GB</li>
+
+        </ul>
+        <a>LEARN MORE</a>
+      </div>
+      <div>
+        <p>Master</p>
+        <ul>
+          <!-- <li>&dollar;39.99</li> -->
+          <li> &dollar;<span class="annual" id="master">399.99</span></li>
+          <li> 2 TB Storage</li>
+          <li>10 Users Allowed</li>
+          <li>Send up to 20 GB</li>
+
+        </ul>
+        <a>LEARN MORE</a>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Joanne</a>.
+  </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
 </html>
