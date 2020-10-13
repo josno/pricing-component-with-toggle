@@ -1,3 +1,4 @@
+# Challenge Complete! See it [here](https://josno.github.io/pricing-component-with-toggle/)
 # Frontend Mentor - File Transfer pricing component
 
 ![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)
